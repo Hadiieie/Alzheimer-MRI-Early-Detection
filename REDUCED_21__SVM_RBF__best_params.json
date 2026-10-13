@@ -1,0 +1,5 @@
+{
+    "clf__gamma": 0.05,
+    "clf__class_weight": "balanced",
+    "clf__C": 25
+}

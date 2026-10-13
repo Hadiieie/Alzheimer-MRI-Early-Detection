@@ -1,0 +1,118 @@
+{
+    "project_name": "Alzheimer MRI Early-Detection System",
+    "project_status": "FROZEN",
+    "freeze_timestamp_local": "2026-09-24T23:56:35.919487",
+    "task": {
+        "type": "Binary classification",
+        "negative_class": "Normal",
+        "positive_class": "Early_Demented",
+        "positive_original_classes": [
+            "VeryMildDemented",
+            "MildDemented"
+        ],
+        "excluded_from_primary_task": [
+            "ModerateDemented"
+        ]
+    },
+    "dataset": {
+        "original_images": 40000,
+        "clean_images": 39538,
+        "primary_dataset_images": 29853,
+        "train_images": 20891,
+        "validation_images": 4482,
+        "test_images": 4480,
+        "group_aware_split": true,
+        "train_validation_overlap": 0,
+        "train_test_overlap": 0,
+        "validation_test_overlap": 0
+    },
+    "preprocessing": {
+        "approach": "Whole-brain",
+        "roi_v1_v2_status": "Rejected scientifically",
+        "brain_mask_version": "V4",
+        "brain_mask_full_audit_pass": 39538
+    },
+    "features": {
+        "number_of_features": 30,
+        "feature_names": [
+            "brain_area",
+            "brain_ratio",
+            "brain_perimeter",
+            "compactness",
+            "bbox_aspect_ratio",
+            "mean_intensity",
+            "std_intensity",
+            "median_intensity",
+            "entropy",
+            "p10",
+            "p25",
+            "p75",
+            "p90",
+            "edge_density",
+            "central_mean",
+            "central_std",
+            "central_median",
+            "central_entropy",
+            "central_dark_ratio",
+            "central_bright_ratio",
+            "left_mean",
+            "right_mean",
+            "left_dark_ratio",
+            "right_dark_ratio",
+            "intensity_asymmetry",
+            "dark_ratio_asymmetry",
+            "glcm_contrast",
+            "glcm_homogeneity",
+            "glcm_energy",
+            "glcm_correlation"
+        ]
+    },
+    "model": {
+        "model_name": "SVM RBF",
+        "model_file": "C:\\Users\\97338\\Desktop\\RAW DATA\\results\\FINAL_MODEL\\final_model.joblib",
+        "scaler_file": "C:\\Users\\97338\\Desktop\\RAW DATA\\results\\FINAL_MODEL\\final_scaler.joblib",
+        "feature_file": "C:\\Users\\97338\\Desktop\\RAW DATA\\results\\FINAL_MODEL\\final_features.txt",
+        "configuration_file": "C:\\Users\\97338\\Desktop\\RAW DATA\\results\\FINAL_MODEL\\final_model_config.json",
+        "frozen_threshold": 0.10872472921801979,
+        "model_selection_used_test_set": false,
+        "threshold_selection_used_test_set": false,
+        "test_set_opened_after_freeze": true
+    },
+    "final_test": {
+        "test_images": 4480,
+        "threshold": 0.10872472921801979,
+        "accuracy": 0.812054,
+        "balanced_accuracy": 0.810185,
+        "sensitivity_recall": 0.815834,
+        "specificity": 0.804536,
+        "precision": 0.892477,
+        "f1": 0.852436,
+        "roc_auc": 0.887921,
+        "pr_auc": 0.929306
+    },
+    "confusion_matrix": {
+        "TN": 1206,
+        "FP": 293,
+        "FN": 549,
+        "TP": 2432
+    },
+    "checksums_sha256": {
+        "final_model.joblib": "d6777df6cea0e1c388fb182c1ee8d03bf8ce3fb711286534b73339b513927264",
+        "final_scaler.joblib": "d2bf76a53436590da92e20b492ea07de349bfb0fd9a469f0d4923cbae9365894",
+        "final_features.txt": "027d67e537a0f42a94479088a344cfe48bbfc1c0071f72860b2e5672052c5631",
+        "final_model_config.json": "3aa76ce38b86a61ca7caf70a71618885728015c115ac28bf9c71c77df1cbc089",
+        "freeze_manifest.json": "de5b478c914e8220471419085dd338b2891678e4461f31861ebc96ef4ce86b26"
+    },
+    "scientific_limitations": [
+        "Verified patient identifiers were not available. Leakage control therefore relied on exact-duplicate and near-duplicate/group-based image analysis rather than confirmed subject-level splitting.",
+        "External validation on an independent MRI dataset has not yet been performed.",
+        "The primary task is binary early-detection classification rather than full four-stage dementia classification.",
+        "The model is intended for research and educational use and is not a clinical diagnostic medical device."
+    ],
+    "freeze_policy": {
+        "model_must_not_change": true,
+        "feature_set_must_not_change": true,
+        "threshold_must_not_change": true,
+        "test_set_must_not_be_used_for_tuning": true
+    }
+}

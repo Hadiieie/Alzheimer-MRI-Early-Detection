@@ -1,0 +1,2 @@
+subject_id,CDR,ground_truth,ground_truth_binary,image_path,prediction,prediction_binary,decision_score,threshold,margin,correct,status,error
+OAS1_0065_MR1,0.0,Normal,0,C:\Users\97338\Desktop\RAW DATA\NEW MRI\OASIS_FREESURFER_BATCH\OAS1_0065_MR1.png,,,,,,False,ERROR,Brain Mask V4 failed: FAILED_RATIO_QC

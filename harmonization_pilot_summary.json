@@ -1,0 +1,71 @@
+{
+    "IMPORTANT": "DEVELOPMENT/PILOT ONLY. These OASIS cases have already been inspected. Do not report post-harmonization performance as untouched external validation.",
+    "frozen_model_changed": false,
+    "frozen_threshold_changed": false,
+    "target_statistics_source": "INTERNAL TRAIN SET ONLY",
+    "target_brain_ratio_median": 0.4369628099173553,
+    "target_p10_median": 52.0,
+    "target_p90_median": 232.0,
+    "variants": {
+        "BASELINE": {
+            "successful_cases": 18,
+            "failed_cases": 1,
+            "mean_absolute_feature_z_shift": 1.5792654672965603,
+            "metrics": {
+                "n": 18,
+                "accuracy": 0.5,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0,
+                "precision": 0.5,
+                "f1": 0.6666666666666666,
+                "roc_auc": 0.691358024691358,
+                "pr_auc": 0.7354497354497356,
+                "TN": 0,
+                "FP": 9,
+                "FN": 0,
+                "TP": 9
+            }
+        },
+        "SPATIAL_ONLY": {
+            "successful_cases": 19,
+            "failed_cases": 0,
+            "mean_absolute_feature_z_shift": 1.1991794977940378,
+            "metrics": {
+                "n": 19,
+                "accuracy": 0.5263157894736842,
+                "balanced_accuracy": 0.55,
+                "sensitivity": 1.0,
+                "specificity": 0.1,
+                "precision": 0.5,
+                "f1": 0.6666666666666666,
+                "roc_auc": 0.5888888888888889,
+                "pr_auc": 0.6358686067019401,
+                "TN": 1,
+                "FP": 9,
+                "FN": 0,
+                "TP": 9
+            }
+        },
+        "SPATIAL_PLUS_INTENSITY": {
+            "successful_cases": 19,
+            "failed_cases": 0,
+            "mean_absolute_feature_z_shift": 0.5186264547566617,
+            "metrics": {
+                "n": 19,
+                "accuracy": 0.42105263157894735,
+                "balanced_accuracy": 0.4277777777777778,
+                "sensitivity": 0.5555555555555556,
+                "specificity": 0.3,
+                "precision": 0.4166666666666667,
+                "f1": 0.47619047619047616,
+                "roc_auc": 0.37777777777777777,
+                "pr_auc": 0.44744561567316987,
+                "TN": 3,
+                "FP": 7,
+                "FN": 4,
+                "TP": 5
+            }
+        }
+    }
+}

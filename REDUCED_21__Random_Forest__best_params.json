@@ -1,0 +1,8 @@
+{
+    "clf__n_estimators": 1000,
+    "clf__min_samples_split": 6,
+    "clf__min_samples_leaf": 1,
+    "clf__max_features": "log2",
+    "clf__max_depth": 30,
+    "clf__class_weight": "balanced"
+}

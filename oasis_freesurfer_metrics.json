@@ -1,0 +1,26 @@
+{
+    "evaluation_name": "OASIS FreeSurfer challenge-set evaluation",
+    "requested_manifest_cases": 20,
+    "successfully_extracted_cases": 19,
+    "successfully_inferred_cases": 18,
+    "inference_failures": 1,
+    "class_distribution": {
+        "Normal": 9,
+        "Early_Demented": 9
+    },
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "precision": 0.5,
+    "f1": 0.6666666666666666,
+    "roc_auc": 0.691358024691358,
+    "pr_auc": 0.7354497354497356,
+    "confusion_matrix": {
+        "TN": 0,
+        "FP": 9,
+        "FN": 0,
+        "TP": 9
+    },
+    "note": "Challenge-set/pilot evaluation using OASIS-1 FreeSurfer brain-extracted volumes and a frozen deterministic 50%-of-occupied-brain-height axial-slice rule. The frozen model, feature set, Brain Mask V4, preprocessing, and threshold were not modified."
+}

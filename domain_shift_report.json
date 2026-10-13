@@ -1,0 +1,62 @@
+{
+    "oasis_total_rows": 19,
+    "oasis_successful_inference": 18,
+    "oasis_inference_errors": 1,
+    "oasis_normal_score_mean": 1.142957955843393,
+    "oasis_normal_score_median": 1.1970052203366002,
+    "oasis_early_score_mean": 1.3389653370061017,
+    "oasis_early_score_median": 1.3413114180620993,
+    "top_shifted_features": [
+        {
+            "feature": "p90",
+            "mean_z_shift": -4.343384358804764,
+            "robust_median_shift_iqr_units": -6.071428571428571
+        },
+        {
+            "feature": "brain_area",
+            "mean_z_shift": -3.91145906538241,
+            "robust_median_shift_iqr_units": -3.3022017045454546
+        },
+        {
+            "feature": "brain_ratio",
+            "mean_z_shift": -3.9114590653824095,
+            "robust_median_shift_iqr_units": -3.3022017045454533
+        },
+        {
+            "feature": "glcm_correlation",
+            "mean_z_shift": -3.771785790369036,
+            "robust_median_shift_iqr_units": -2.951000237397821
+        },
+        {
+            "feature": "std_intensity",
+            "mean_z_shift": -3.2003642260444853,
+            "robust_median_shift_iqr_units": -2.592036002176517
+        },
+        {
+            "feature": "p75",
+            "mean_z_shift": -3.101935514992011,
+            "robust_median_shift_iqr_units": -3.1538461538461537
+        },
+        {
+            "feature": "brain_perimeter",
+            "mean_z_shift": -2.873344781861353,
+            "robust_median_shift_iqr_units": -2.0697558214699807
+        },
+        {
+            "feature": "edge_density",
+            "mean_z_shift": 2.564823768784116,
+            "robust_median_shift_iqr_units": 1.9270790048600988
+        },
+        {
+            "feature": "mean_intensity",
+            "mean_z_shift": -2.398845274204229,
+            "robust_median_shift_iqr_units": -2.1312552355696566
+        },
+        {
+            "feature": "bbox_aspect_ratio",
+            "mean_z_shift": -2.3464006476093684,
+            "robust_median_shift_iqr_units": -4.66568291338098
+        }
+    ],
+    "interpretation_note": "Descriptive domain-shift analysis only. The frozen model and threshold are not changed."
+}

@@ -1,0 +1,92 @@
+{
+    "project": "Alzheimer MRI Early-Detection System",
+    "task": "Binary classification",
+    "final_test_metrics": {
+        "test_images": 4480,
+        "threshold": 0.10872472921801979,
+        "accuracy": 0.812054,
+        "balanced_accuracy": 0.810185,
+        "sensitivity_recall": 0.815834,
+        "specificity": 0.804536,
+        "precision": 0.892477,
+        "f1": 0.852436,
+        "roc_auc": 0.887921,
+        "pr_auc": 0.929306
+    },
+    "confusion_matrix": {
+        "TN": 1206,
+        "FP": 293,
+        "FN": 549,
+        "TP": 2432
+    },
+    "bootstrap_95_ci": {
+        "bootstrap_samples": 2000,
+        "bootstrap_type": "GROUP-AWARE",
+        "accuracy": {
+            "point_estimate": 0.812054,
+            "ci_95_lower": 0.799774,
+            "ci_95_upper": 0.823596
+        },
+        "balanced_accuracy": {
+            "point_estimate": 0.810185,
+            "ci_95_lower": 0.797359,
+            "ci_95_upper": 0.822235
+        },
+        "sensitivity": {
+            "point_estimate": 0.815834,
+            "ci_95_lower": 0.80129,
+            "ci_95_upper": 0.830681
+        },
+        "specificity": {
+            "point_estimate": 0.804536,
+            "ci_95_lower": 0.783018,
+            "ci_95_upper": 0.823897
+        },
+        "precision": {
+            "point_estimate": 0.892477,
+            "ci_95_lower": 0.879939,
+            "ci_95_upper": 0.904361
+        },
+        "f1": {
+            "point_estimate": 0.852436,
+            "ci_95_lower": 0.842068,
+            "ci_95_upper": 0.862555
+        },
+        "roc_auc": {
+            "point_estimate": 0.887921,
+            "ci_95_lower": 0.877116,
+            "ci_95_upper": 0.898177
+        },
+        "pr_auc": {
+            "point_estimate": 0.929306,
+            "ci_95_lower": 0.91898,
+            "ci_95_upper": 0.938399
+        }
+    },
+    "subgroup_results": {
+        "VeryMildDemented": {
+            "test_images": 1537,
+            "correct": 1110,
+            "errors": 427,
+            "false_negatives": 427,
+            "sensitivity": 0.722186,
+            "false_negative_rate": 0.27781392
+        },
+        "MildDemented": {
+            "test_images": 1444,
+            "correct": 1322,
+            "errors": 122,
+            "false_negatives": 122,
+            "sensitivity": 0.915512,
+            "false_negative_rate": 0.08448753
+        },
+        "NonDemented": {
+            "test_images": 1499,
+            "correct": 1206,
+            "errors": 293,
+            "false_positives": 293,
+            "specificity": 0.804536,
+            "false_positive_rate": 0.195464
+        }
+    }
+}

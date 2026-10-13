@@ -1,0 +1,8 @@
+FINAL FROZEN MODEL ARTIFACT CHECKSUMS
+======================================================================
+
+d6777df6cea0e1c388fb182c1ee8d03bf8ce3fb711286534b73339b513927264  final_model.joblib
+d2bf76a53436590da92e20b492ea07de349bfb0fd9a469f0d4923cbae9365894  final_scaler.joblib
+027d67e537a0f42a94479088a344cfe48bbfc1c0071f72860b2e5672052c5631  final_features.txt
+3aa76ce38b86a61ca7caf70a71618885728015c115ac28bf9c71c77df1cbc089  final_model_config.json
+de5b478c914e8220471419085dd338b2891678e4461f31861ebc96ef4ce86b26  freeze_manifest.json

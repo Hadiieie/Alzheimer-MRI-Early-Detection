@@ -1,0 +1,18 @@
+{
+    "final_model": {
+        "filename": "final_model.joblib",
+        "sha256": "d6777df6cea0e1c388fb182c1ee8d03bf8ce3fb711286534b73339b513927264"
+    },
+    "feature_list": {
+        "filename": "final_features.txt",
+        "sha256": "027d67e537a0f42a94479088a344cfe48bbfc1c0071f72860b2e5672052c5631"
+    },
+    "threshold_file": {
+        "filename": "selected_threshold.json",
+        "sha256": "7ffe83e28e1ae23cd5e78f09e6a4f55a378f7e29b1ddde5fa85382d92e97fe6e"
+    },
+    "scaler": {
+        "filename": "final_scaler.joblib",
+        "sha256": "d2bf76a53436590da92e20b492ea07de349bfb0fd9a469f0d4923cbae9365894"
+    }
+}

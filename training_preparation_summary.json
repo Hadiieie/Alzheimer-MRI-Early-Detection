@@ -1,0 +1,19 @@
+{
+    "train_images": 20891,
+    "validation_images": 4482,
+    "test_images": 4480,
+    "full_feature_count": 30,
+    "reduced_feature_count": 21,
+    "correlation_threshold": 0.95,
+    "removed_features": [
+        "brain_ratio",
+        "median_intensity",
+        "p25",
+        "central_median",
+        "left_mean",
+        "right_mean",
+        "left_dark_ratio",
+        "right_dark_ratio",
+        "glcm_energy"
+    ]
+}
