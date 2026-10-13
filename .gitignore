@@ -1,0 +1,28 @@
+# Raw MRI / external datasets
+OASIS_FREESURFER/
+NEW MRI/
+*.tar
+*.tar.gz
+*.7z
+*.zip
+*.mgz
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Large generated outputs
+results/SINGLE_MRI_INFERENCE/
+results/OASIS_MASK_DIAGNOSTICS/images/
+results/OASIS_HARMONIZATION_PILOT/images/
+results/OASIS_VOLUME_SOURCE_ABLATION/images/
